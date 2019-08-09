@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+
+<script >
+    function validateForm() {
+        var x = document.forms["myForm"]["fname"].value;       
+        var patt1=/\d/g; 
+        var yyy =x.match(patt1);
+        var z=x.substring(0);
+         var xxx=z.split("");
+        if(xxx.length==11){
+        	alert(xxx);
+       
+            if(yyy[0]==1&&yyy.length==11){
+            alert("号码正确"); 
+            }
+            if(yyy[0]!=1||yyy.length!=11){
+        	    alert("号码错误");
+            
+            }
+        }else{
+        	alert("重新输入");
+        }
+    }
+
+</script>	
+
+</head>
+
+
+<body>
+
+<form name="myForm" onsubmit="return validateForm()" method="post">
+手机号：   
+<input type="text" name="fname">
+
+
+</form>
+
+
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+
+<script >
+    function validateForm() {
+        var x = document.forms["myForm"]["fname"].value;
+        
+
+        if (x == "") {
+            alert("邮箱必须填写！");
+            return false;
+        }
+        else {
+            var y=x.indexOf("@");
+            var yy=x.indexOf(".com")
+            var z=x.substring(0,y);
+            var tian=x.substring(y+1,yy);
+            var txt = { "qq": {"name": "腾讯"},
+
+            			"123": {"name": "abc"},
+
+            			"163": {"name": "网易"}
+            }
+            
+  			alert(txt[tian].name);
+  		 
+        }s
+
+    }
+
+</script>	
+
+</head>
+
+
+<body>
+
+<form name="myForm" onsubmit="return validateForm()" method="post">
+邮箱：   
+<input type="text" name="fname">
+
+
+</form>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+for (var i = 0; i < wer.length; i++) {
+  				while(wer[i]==tian){
+  					alert(z+qwe[i]);break;
+  				}
+
+  			}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

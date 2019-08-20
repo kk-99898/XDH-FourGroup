@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript</title>
+<script type="text/javascript">
+	//图片地址的数组
+	var imgPaths = ["images/0.jpg","images/1.jpg","images/2.jpg","images/3.jpg","images/4.jpg","images/5.jpg"];
+	//用于存储当前显示的图片的下标 
+	var index = 0 ;
+    var timer;
+    function play(){
+	    timer = setInterval(function(){
+	       x1(1);
+	    },5000);
+    }
+    function stop(){
+    	clearInterval(timer);
+    }
+    play();
+  
+	function x1(i){
+		index+=i;
+		//当从0下标 向上一张切换时, 会切换成-1 , 
+		if(index == -1){
+			//则将其设置为最大下标 
+			index = imgPaths.length-1;
+		}else if(index == imgPaths.length){
+			index = 0;
+		}
+		//切换图片 
+		var img = document.getElementsByTagName("img")[0];
+		img.src=imgPaths[index];
+		//寻找到对应下标的 class为d1的div
+		var d1s = document.getElementsByClassName("d1");
+		for(j=0;j<d1s.length;j++){
+			if(index==j){
+				//当前下标 对应的div
+				d1s[j].style="background-color: #fff;cursor: pointer;";
+			}else{
+				//其他div
+				d1s[j].style="";
+			}
+		}
+
+
+	}
+
+	
+</script>
+<style type="text/css">
+	.d1{
+		width:7px;
+		height:7px;
+		display: inline-block;
+		border-radius: 50%;
+		border:1px solid #fff;
+	}
+	.d1:hover{
+		background-color: #fff;
+		cursor: pointer;
+	}
+	#imgs{
+		width:530px;
+		height:320px;
+		position: relative;
+	}
+	#controls_1{
+		width:530px;
+		height:32px;
+		font-size:30px;
+		position: absolute;
+		top:140.5px;
+		left:0px;
+	}
+	#controls_1>div{
+		display: inline-block;
+		padding: 5px 3px;
+		color:#fff;
+		background-color: rgba(111,111,111,0.3);
+	}
+	#controls_1>div:hover{
+		background-color: rgba(111,111,111,0.7);
+		cursor: pointer;
+	}
+	.c1_left{
+		float: left;
+	}
+	.c1_right{
+		float: right;
+	}
+	#controls_2{
+		width:600px;
+		height:20px;
+		position:absolute;
+		bottom:0px;
+		left:0px;
+		padding-left: 200px;
+		padding-bottom: 0px;
+		
+	}
+</style>
+</head>
+<body >
+	<div id="imgs" >
+		<div id="controls_1">
+			<div class="c1_left" onclick="x1(-1)"><</div>
+			<div class="c1_right" onclick="x1(1)">></div>
+		</div>
+		<br>
+		<img src="images/0.jpg" >
+		<div id="controls_2">
+			<div class="d1" onmouseover="index=0;x1(0)" style="background-color: #fff;cursor: pointer;"></div>
+			<div class="d1" onmouseover="index=1;x1(0)"></div>
+			<div class="d1" onmouseover="index=2;x1(0)"></div>
+			<div class="d1" onmouseover="index=3;x1(0)"></div>
+			<div class="d1" onmouseover="index=4;x1(0)"></div>
+			<div class="d1" onmouseover="index=5;x1(0)"></div>
+		</div>
+	</div>
+</body>
+</html>

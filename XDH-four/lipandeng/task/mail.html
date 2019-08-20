@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>document</title>
+</head>
+
+<body>
+    <div>
+        请输入邮箱:<input id="mail" type="text">
+        <button onclick="show()">提交</button>
+    </div>
+    <div>
+        请输入邮箱后缀和公司,用逗号隔开:<input id="add" type="text">
+        <button onclick="add()">提交</button>
+    </div>
+
+</body>
+<script>
+    //申请一个集合存放com和其对应的公司
+    var arrCom = {
+        "163.com": "网易",
+        "qq.com": "腾讯",
+        "126.com": "网易",
+        "sina.com": "新浪"
+    };
+
+    function show() {
+        var mail = document.getElementById("mail").value;
+        var arrMail = mail.split("@");
+        var user = arrMail[0];
+
+        var com = arrMail[1].toLowerCase();
+        //遍历进行判断
+        for (var k  in arrCom) {
+            if (com == k ) {
+                alert("用户名是:" + user + "对应的公司是:" + arrCom[k]);
+                return;
+            }
+        }
+        alert("输入的邮箱不存在!");
+    }
+
+    function add() {
+
+        var add = document.getElementById("add").value;
+        if (add.indexOf(",") != -1) {
+            var adds = add.split(",");
+            var com = adds[0].toLowerCase();
+            for (var i in arrCom) {
+                if (com == i) {
+                    alert("已存在该公司,添加失败!");
+                    return;
+                }
+                else if(com.indexOf(".com")>0){
+                    arrCom[adds[0]] = adds[1];
+                    alert("添加成功");
+                    return;
+                }
+                else{
+                    alert("输入的.com不正确");
+                    return;
+                }
+            }
+        } else {
+            alert("请用逗号隔开!");
+            return;
+        }
+    }
+</script>
+
+</html>

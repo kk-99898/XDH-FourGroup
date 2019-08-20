@@ -1,0 +1,285 @@
+body {
+    background: url("./img/bj3.jpg");
+    font-family: "Lucida Grande", "Lucida Sans Unicode", verdana, lucida, helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    color: #000;
+}
+div.page-wrapper h1{
+    margin-top: 0%;
+    text-align: center;
+    font-weight: 800;
+    font-family: Chandas;
+    font-size: 4em;
+    color: white;
+}
+
+div.page-wrapper h2 {
+    margin-top: -3%;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    font-family: Chilanka;
+}
+div.summary{
+    color: white;
+    text-align: center;
+    font-family: Chandas;
+}
+div.preamble h3{
+    background-color: white;
+    color: black;
+    padding: 10px;
+    font-weight: 800;
+    border-radius: 5px;
+    width: 18%;
+}
+div.preamble{
+    width: 40%;
+    background-color: black;
+    opacity: 0.6;
+    color: whitesmoke;
+    font-weight: 800;
+    border-radius: 10px;
+    float: right;
+    font-family: Chilanka;
+    margin-right: 15%;
+    margin-bottom: 20px;
+}
+div.explanation h3{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    width: 18%;
+}
+div.explanation{
+    width: 40%;
+    background-color: white;
+    opacity: 0.6;
+    color: black;
+    font-weight: 800;
+    border-radius: 10px;
+    float: right;
+    font-family: Chilanka;
+    margin-bottom: 20px;
+    margin-right: 15%;
+}
+div.participation h3{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    width: 18%;
+    padding: 10px;
+}
+div.participation{
+    width: 40%;
+    background-color: black;
+    opacity: 0.7;
+    color: white;
+    font-weight: 800;
+    font-style: italic;
+    border-radius: 10px;
+    float: right;
+    font-family: Chilanka;
+    margin-bottom: 20px;
+    margin-right: 15%;
+}
+div.benefits h3{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    width: 18%;
+    padding: 10px;
+}
+div.benefits{
+    width: 40%;
+    background-color: white;
+    opacity: 0.6;
+    color: black;
+    font-weight: 800;
+    font-style: italic;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    float: right;
+    font-family: Chilanka;
+    margin-right: 15%;
+}
+div.requirements h3{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    width: 18%;
+    padding: 10px;
+}
+div.requirements{
+    width: 40%;
+    background-color: black;
+    opacity: 0.7;
+    font-weight: 800;
+    color: white;
+    font-style: italic;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    float: right;
+    font-family: Chilanka;
+    margin-right: 15%;
+}
+div.design-selection h3{
+    color: white;
+    background-color: black;
+    margin-left: 20px;
+    width: 94.3%;
+    padding: 5px;
+
+}
+div.design-selection{
+    color: white;
+    background-color: gray;
+    opacity: 0.8;
+    float: left;
+    font-weight: 800;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 20%;
+    margin-top: -58%;
+}
+div.design-archives h3{
+    color: white;
+    background-color: black;
+    margin-left: 20px;
+    width: 93.8%;
+    padding: 5px;
+}
+div.design-archives{
+    background-color: gray;
+    color: white;
+    float: left;
+    opacity: 0.8;
+    font-weight: 800;
+    border-radius: 5px;
+    width: 17%;
+    padding: 10px;
+    margin-left: 20%;
+    margin-top: -40%;
+}
+div.zen-resources h3{
+    color: white;
+    background-color: black;
+    margin-left: 20px;
+    width: 91.5%;
+    padding: 5px;
+}
+div.zen-resources{
+    color: white;
+    background-color: gray;
+    float: left;
+    width: 18%;
+    opacity: 0.8;
+    border-radius: 5px;
+    margin-left: 20%;
+    margin-top: -25%;
+}
+div.main footer{
+    background-color: black;
+    opacity: 0.8;
+    text-align: center;
+    width: 17%;
+    font-size: 1.1em;
+    font-weight: 700;
+    border-radius: 5px;
+    font-family: Chilanka;
+    float: left;
+    margin-top: -10%;
+    margin-left: 20%;
+}
+div.preamble p{
+    margin: 30px;
+}
+div.explanation p{
+    margin: 30px;
+}
+div.participation p{
+    margin: 30px;
+}
+div.benefits p{
+    margin: 30px;
+}
+div.requirements p{
+    margin: 30px;
+}
+div.design-selection a{
+    display: inline;
+    color: white;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+div.design-archives a{
+    display: inline;
+    color: white;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+div.zen-resources a{
+    display: inline;
+    color: white;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+div.page-wrapper{
+    display: inline;
+    color: white;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+div.participation a{
+    display: inline;
+    color: white;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+div.requirements a{
+    display: inline;
+    color: white;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+div.main footer a{
+    display: inline;
+    color: white;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    font-weight: normal;
+    text-transform: capitalize;
+}

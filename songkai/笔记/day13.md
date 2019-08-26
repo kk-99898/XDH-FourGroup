@@ -1,110 +1,389 @@
-### BootStrap
+## 嵌套列
 
-1. 了解Bootstrap：
+为了使用内置的栅格系统将内容再次嵌套，可以通过添加一个新的 `.row` 元素和一系列 `.col-sm-*` 元素到已经存在的 `.col-sm-*` 元素内。被嵌套的行（row）所包含的列（column）的个数不能超过12（其实，没有要求你必须占满12列）。
 
-   简单、直观、强悍的前段开发框架，让web开发更加迅速、简单。
-
-2. 优点：
-
-   快速、简单、灵活的栅格系统、小而强大、响应式布局、跨平台等
-
-
-Bootstrap插件全部依赖jQuery
-
-​	Bootstrap的所有JavaScript插件都依赖jQuery，因此jQuery必须在BootStrap之前引入。
-
-## 预编译版
-
-下载压缩包之后，将其解压缩到任意目录即可看到以下（压缩版的）目录结构：
-
-```
-bootstrap/
-├── css/
-│   ├── bootstrap.css
-│   ├── bootstrap.css.map
-│   ├── bootstrap.min.css
-│   ├── bootstrap.min.css.map
-│   ├── bootstrap-theme.css
-│   ├── bootstrap-theme.css.map
-│   ├── bootstrap-theme.min.css
-│   └── bootstrap-theme.min.css.map
-├── js/
-│   ├── bootstrap.js
-│   └── bootstrap.min.js
-└── fonts/
-    ├── glyphicons-halflings-regular.eot
-    ├── glyphicons-halflings-regular.svg
-    ├── glyphicons-halflings-regular.ttf
-    ├── glyphicons-halflings-regular.woff
-    └── glyphicons-halflings-regular.woff2
-```
-
-## Bootstrap 源码
-
-Bootstrap 源码包含了预先编译的 CSS、JavaScript 和图标字体文件，并且还有 LESS、JavaScript 和文档的源码。具体来说，主要文件组织结构如下：
-
-```
-bootstrap/
-├── less/
-├── js/
-├── fonts/
-├── dist/
-│   ├── css/
-│   ├── js/
-│   └── fonts/
-└── docs/
-    └── examples/
-```
-
-`less/`、`js/` 和 `fonts/` 目录分别包含了 CSS、JS 和字体图标的源码。`dist/` 目录包含了上面所说的预编译 Bootstrap 包内的所有文件。`docs/` 包含了所有文档的源码文件，`examples/` 目录是 Bootstrap 官方提供的实例工程。除了这些，其他文件还包含 Bootstrap 安装包的定义文件、许可证文件和编译脚本等。
-
-## 移动设备优先
-
-在 Bootstrap 2 中，我们对框架中的某些关键部分增加了对移动设备友好的样式。而在 Bootstrap 3 中，我们重写了整个框架，使其一开始就是对移动设备友好的。这次不是简单的增加一些可选的针对移动设备的样式，而是直接融合进了框架的内核中。也就是说，**Bootstrap 是移动设备优先的**。针对移动设备的样式融合进了框架的每个角落，而不是增加一个额外的文件。
-
-为了确保适当的绘制和触屏缩放，需要在 `<head>` 之中**添加 viewport 元数据标签**。
-
-```
-<meta name="viewport" content="width=device-width, initial-scale=1">
-```
-
-在移动设备浏览器上，通过为视口（viewport）设置 meta 属性为 `user-scalable=no` 可以禁用其缩放（zooming）功能。这样禁用缩放功能后，用户只能滚动屏幕，就能让你的网站看上去更像原生应用的感觉。注意，这种方式我们并不推荐所有网站使用，还是要看你自己的情况而定！
-
-```
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-```
-
-## 排版与链接
-
-Bootstrap 排版、链接样式设置了基本的全局样式。分别是：
-
-- 为 `body` 元素设置 `background-color: #fff;`
-- 使用 `@font-family-base`、`@font-size-base` 和 `@line-height-base` 变量作为排版的基本参数
-- 为所有链接设置了基本颜色 `@link-color` ，并且当链接处于 `:hover` 状态时才添加下划线
-
-这些样式都能在 `scaffolding.less` 文件中找到对应的源码。
-
-## Normalize.css
-
-为了增强跨浏览器表现的一致性，我们使用了 [Normalize.css](http://necolas.github.io/normalize.css/)，这是由 [Nicolas Gallagher](https://twitter.com/necolas) 和 [Jonathan Neal](https://twitter.com/jon_neal) 维护的一个CSS 重置样式库。
-
-## 布局容器
-
-Bootstrap 需要为页面内容和栅格系统包裹一个 `.container` 容器。我们提供了两个作此用处的类。注意，由于 `padding` 等属性的原因，这两种 容器类不能互相嵌套。
-
-`.container` 类用于固定宽度并支持响应式布局的容器。
-
-```
-<div class="container">
-  ...
+```html
+<div class="row">
+  <div class="col-sm-9">
+    Level 1: .col-sm-9
+    <div class="row">
+      <div class="col-xs-8 col-sm-6">
+        Level 2: .col-xs-8 .col-sm-6
+      </div>
+      <div class="col-xs-4 col-sm-6">
+        Level 2: .col-xs-4 .col-sm-6
+      </div>
+    </div>
+  </div>
 </div>
 ```
 
-`.container-fluid` 类用于 100% 宽度，占据全部视口（viewport）的容器。
+
+
+## 列排序
+
+通过使用 `.col-md-push-*` 和 `.col-md-pull-*` 类就可以很容易的改变列（column）的顺序。
+
+<div class="row">
+  <div class="col-md-9 col-md-push-3">.col-md-9 .col-md-push-3</div>
+  <div class="col-md-3 col-md-pull-9">.col-md-3 .col-md-pull-9</div>
+</div>
+
+## Less mixin 和变量
+
+除了用于快速布局的[预定义栅格类](https://v3.bootcss.com/css/#grid-example-basic)，Bootstrap 还包含了一组 Less 变量和 mixin 用于帮你生成简单、语义化的布局。
+
+### 变量
+
+通过变量来定义列数、槽（gutter）宽、媒体查询阈值（用于确定合适让列浮动）。我们使用这些变量生成预定义的栅格类，如上所示，还有如下所示的定制 mixin。
 
 ```
-<div class="container-fluid">
-  ...
+@grid-columns:              12;
+@grid-gutter-width:         30px;
+@grid-float-breakpoint:     768px;
+```
+
+### mixin
+
+mixin 用来和栅格变量一同使用，为每个列（column）生成语义化的 CSS 代码。
+
+```css
+// Creates a wrapper for a series of columns
+.make-row(@gutter: @grid-gutter-width) {
+  // Then clear the floated columns
+  .clearfix();
+
+  @media (min-width: @screen-sm-min) {
+    margin-left:  (@gutter / -2);
+    margin-right: (@gutter / -2);
+  }
+
+  // Negative margin nested rows out to align the content of columns
+  .row {
+    margin-left:  (@gutter / -2);
+    margin-right: (@gutter / -2);
+  }
+}
+
+// Generate the extra small columns
+.make-xs-column(@columns; @gutter: @grid-gutter-width) {
+  position: relative;
+  // Prevent columns from collapsing when empty
+  min-height: 1px;
+  // Inner gutter via padding
+  padding-left:  (@gutter / 2);
+  padding-right: (@gutter / 2);
+
+  // Calculate width based on number of columns available
+  @media (min-width: @grid-float-breakpoint) {
+    float: left;
+    width: percentage((@columns / @grid-columns));
+  }
+}
+
+// Generate the small columns
+.make-sm-column(@columns; @gutter: @grid-gutter-width) {
+  position: relative;
+  // Prevent columns from collapsing when empty
+  min-height: 1px;
+  // Inner gutter via padding
+  padding-left:  (@gutter / 2);
+  padding-right: (@gutter / 2);
+
+  // Calculate width based on number of columns available
+  @media (min-width: @screen-sm-min) {
+    float: left;
+    width: percentage((@columns / @grid-columns));
+  }
+}
+
+// Generate the small column offsets
+.make-sm-column-offset(@columns) {
+  @media (min-width: @screen-sm-min) {
+    margin-left: percentage((@columns / @grid-columns));
+  }
+}
+.make-sm-column-push(@columns) {
+  @media (min-width: @screen-sm-min) {
+    left: percentage((@columns / @grid-columns));
+  }
+}
+.make-sm-column-pull(@columns) {
+  @media (min-width: @screen-sm-min) {
+    right: percentage((@columns / @grid-columns));
+  }
+}
+
+// Generate the medium columns
+.make-md-column(@columns; @gutter: @grid-gutter-width) {
+  position: relative;
+  // Prevent columns from collapsing when empty
+  min-height: 1px;
+  // Inner gutter via padding
+  padding-left:  (@gutter / 2);
+  padding-right: (@gutter / 2);
+
+  // Calculate width based on number of columns available
+  @media (min-width: @screen-md-min) {
+    float: left;
+    width: percentage((@columns / @grid-columns));
+  }
+}
+
+// Generate the medium column offsets
+.make-md-column-offset(@columns) {
+  @media (min-width: @screen-md-min) {
+    margin-left: percentage((@columns / @grid-columns));
+  }
+}
+.make-md-column-push(@columns) {
+  @media (min-width: @screen-md-min) {
+    left: percentage((@columns / @grid-columns));
+  }
+}
+.make-md-column-pull(@columns) {
+  @media (min-width: @screen-md-min) {
+    right: percentage((@columns / @grid-columns));
+  }
+}
+
+// Generate the large columns
+.make-lg-column(@columns; @gutter: @grid-gutter-width) {
+  position: relative;
+  // Prevent columns from collapsing when empty
+  min-height: 1px;
+  // Inner gutter via padding
+  padding-left:  (@gutter / 2);
+  padding-right: (@gutter / 2);
+
+  // Calculate width based on number of columns available
+  @media (min-width: @screen-lg-min) {
+    float: left;
+    width: percentage((@columns / @grid-columns));
+  }
+}
+
+// Generate the large column offsets
+.make-lg-column-offset(@columns) {
+  @media (min-width: @screen-lg-min) {
+    margin-left: percentage((@columns / @grid-columns));
+  }
+}
+.make-lg-column-push(@columns) {
+  @media (min-width: @screen-lg-min) {
+    left: percentage((@columns / @grid-columns));
+  }
+}
+.make-lg-column-pull(@columns) {
+  @media (min-width: @screen-lg-min) {
+    right: percentage((@columns / @grid-columns));
+  }
+}
+```
+
+### 实例展示
+
+你可以重新修改这些变量的值，或者用默认值调用这些 mixin。下面就是一个利用默认设置生成两列布局（列之间有间隔）的案例。
+
+```html
+.wrapper {
+  .make-row();
+}
+.content-main {
+  .make-lg-column(8);
+}
+.content-secondary {
+  .make-lg-column(3);
+  .make-lg-column-offset(1);
+}
+<div class="wrapper">
+  <div class="content-main">...</div>
+  <div class="content-secondary">...</div>
 </div>
 ```
 
+# 
+
+# 排版
+
+## 标题
+
+HTML 中的所有标题标签，`<h1>` 到 `<h6>` 均可使用。另外，还提供了 `.h1` 到 `.h6` 类，为的是给内联（inline）属性的文本赋予标题的样式。
+
+| h1. Bootstrap heading | Semibold 36px |
+| --------------------- | ------------- |
+| h2. Bootstrap heading | Semibold 30px |
+| h3. Bootstrap heading | Semibold 24px |
+| h4. Bootstrap heading | Semibold 18px |
+| h5. Bootstrap heading | Semibold 14px |
+| h6. Bootstrap heading | Semibold 12px |
+
+```
+<h1>h1. Bootstrap heading</h1>
+<h2>h2. Bootstrap heading</h2>
+<h3>h3. Bootstrap heading</h3>
+<h4>h4. Bootstrap heading</h4>
+<h5>h5. Bootstrap heading</h5>
+<h6>h6. Bootstrap heading</h6>
+```
+
+
+
+在标题内还可以包含 `<small>` 标签或赋予 `.small` 类的元素，可以用来标记副标题。
+
+| h1. Bootstrap heading Secondary text |
+| ------------------------------------ |
+| h2. Bootstrap heading Secondary text |
+| h3. Bootstrap heading Secondary text |
+| h4. Bootstrap heading Secondary text |
+| h5. Bootstrap heading Secondary text |
+| h6. Bootstrap heading Secondary text |
+
+```
+<h1>h1. Bootstrap heading <small>Secondary text</small></h1>
+<h2>h2. Bootstrap heading <small>Secondary text</small></h2>
+<h3>h3. Bootstrap heading <small>Secondary text</small></h3>
+<h4>h4. Bootstrap heading <small>Secondary text</small></h4>
+<h5>h5. Bootstrap heading <small>Secondary text</small></h5>
+<h6>h6. Bootstrap heading <small>Secondary text</small></h6>
+```
+
+## 页面主体
+
+Bootstrap 将全局 `font-size` 设置为 **14px**，`line-height` 设置为 **1.428**。这些属性直接赋予 `<body>` 元素和所有段落元素。另外，`<p>`（段落）元素还被设置了等于 1/2 行高（即 10px）的底部外边距（margin）。
+
+Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.
+
+Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+
+```
+<p>...</p>
+```
+
+### 中心内容
+
+通过添加 `.lead` 类可以让段落突出显示。
+
+Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+
+```
+<p class="lead">...</p>
+```
+
+### 使用 Less 工具构建
+
+**variables.less** 文件中定义的两个 Less 变量决定了排版尺寸：`@font-size-base` 和 `@line-height-base`。第一个变量定义了全局 font-size 基准，第二个变量是 line-height 基准。我们使用这些变量和一些简单的公式计算出其它所有页面元素的 margin、 padding 和 line-height。自定义这些变量即可改变 Bootstrap 的默认样式。
+
+## 内联文本元素
+
+### Marked text
+
+For highlighting a run of text due to its relevance in another context, use the `<mark>` tag.
+
+You can use the mark tag to highlight text.
+
+```
+You can use the mark tag to <mark>highlight</mark> text.
+```
+
+### 被删除的文本
+
+对于被删除的文本使用 `<del>` 标签。
+
+~~This line of text is meant to be treated as deleted text.~~
+
+```
+<del>This line of text is meant to be treated as deleted text.</del>
+```
+
+### 无用文本
+
+对于没用的文本使用 `<s>` 标签。
+
+This line of text is meant to be treated as no longer accurate.
+
+```
+<s>This line of text is meant to be treated as no longer accurate.</s>
+```
+
+### 插入文本
+
+额外插入的文本使用 `<ins>` 标签。
+
+This line of text is meant to be treated as an addition to the document.
+
+```
+<ins>This line of text is meant to be treated as an addition to the document.</ins>
+```
+
+### 带下划线的文本
+
+为文本添加下划线，使用 `<u>` 标签。
+
+This line of text will render as underlined
+
+```
+<u>This line of text will render as underlined</u>
+```
+
+利用 HTML 自带的表示强调意味的标签来为文本增添少量样式。
+
+### 小号文本
+
+对于不需要强调的inline或block类型的文本，使用 `<small>` 标签包裹，其内的文本将被设置为父容器字体大小的 85%。标题元素中嵌套的 `<small>` 元素被设置不同的 `font-size` 。
+
+你还可以为行内元素赋予 `.small` 类以代替任何 `<small>` 元素。
+
+This line of text is meant to be treated as fine print.
+
+```
+<small>This line of text is meant to be treated as fine print.</small>
+```
+
+### 着重
+
+通过增加 font-weight 值强调一段文本。
+
+The following snippet of text is **rendered as bold text**.
+
+```
+<strong>rendered as bold text</strong>
+```
+
+### 斜体
+
+用斜体强调一段文本。
+
+The following snippet of text is *rendered as italicized text*.
+
+```
+<em>rendered as italicized text</em>
+```
+
+#### Alternate elements
+
+在 HTML5 中可以放心使用 `<b>` 和 `<i>` 标签。`<b>` 用于高亮单词或短语，不带有任何着重的意味；而 `<i>` 标签主要用于发言、技术词汇等。
+
+## 对齐
+
+通过文本对齐类，可以简单方便的将文字重新对齐。
+
+Left aligned text.
+
+Center aligned text.
+
+Right aligned text.
+
+Justified text.
+
+No wrap text.
+
+```html
+<p class="text-left">Left aligned text.</p>
+<p class="text-center">Center aligned text.</p>
+<p class="text-right">Right aligned text.</p>
+<p class="text-justify">Justified text.</p>
+<p class="text-nowrap">No wrap text.</p>
+```

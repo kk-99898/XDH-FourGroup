@@ -1,0 +1,260 @@
+## a标签
+
+```html
+< a href="mailto:m.bluth@example.com">Email</a>
+```
+
+```css
+a[href^="https"]:before {
+  content: "🔗 ";
+}
+```
+
+a[href^="绝对路径"]这个算一种属性选择器，**^** 是"以什么为开始"（begin with）的意思.
+
+```html
+<a target="_blank" href="https://www.wikipedia.org/">Wikipedia (opens in a new window)</a>
+```
+
+通过`target="_blank(空白)"`声明在**新选项卡或窗口**中打开的链接    ,  此属性指定显示链接资源的位置
+
+注意:锚标记经常被滥用`onclick`事件来创建伪按钮，**href**设置为`"#"`或`"javascript:void(0)"`防止页面刷新
+
+​        建议使用<button>替代 , 通常只使用锚点来使用正确的URL进行导航\
+
+## abbr
+
+```html
+<abbr title="Cascading Style Sheets">CSS</abbr>
+```
+
+optional `title`属性可以为缩写提供扩展或描述
+
+
+
+## address
+
+注意:要表示与联系信息无关的任意地址，请使用<p>元素而不是`<address>`元素
+
+## area     --->>>    ***仅在map标签下使用***
+
+shape = "rect"(矩形) "circle"(圆形)  "poly"(多边形)
+
+- `rect`或矩形：**coords**值是两个x，y对：left，top，right，bottom。
+- `circle`：值是指定圆的中心的对`x,y,r`，其中`x,y`是`r`半径的值。
+- `poly`或多边形：该值是多边形中每个点的一组x，y对：`x1,y1,x2,y2,x3,y3,`依此类推。
+
+coords  (坐标)属性规定区域的 x 和 y 坐标。coords 属性与 [shape 属性](https://www.w3school.com.cn/tags/att_area_shape.asp)配合使用，来规定区域的尺寸、形状和位置。图像左上角的坐标是 "0,0"。
+
+alt 仅在使用href时才需要此属性
+
+## article(文章)
+
+header(页眉)   section(部分)
+
+## aside
+
+用法: 经常作为侧边栏或标注框出现
+
+## audio
+
+margin(外边距)
+
+controls ------将提供控件以允许用户控制音频播放，包括音量，搜索和暂停/恢复播放
+
+案例:<audio controls src = " "> </audio>
+
+## b
+
+粗体显示;
+
+- 最好**`class`在`<b>`元素上使用该属性**，以便根据需要传达其他语义信息（例如，`<b class="lead">`对于段落中的第一个句子）。这样，`<b>`即使您的样式需求发生变化，也可以更轻松地管理多个用例，而无需更改HTML中的所有用法!
+- 如果使用`<b>`元素没有语义目的，则应使用font-weight带有值的CSS 属性，`"bold"`(黑体; 粗体)以使文本变为粗体。
+
+## base
+
+head   信息!!!
+必选 href  可选target(一旦规定了打开方式,body中的链接就可以免声明使用)
+
+[案例](https://www.w3school.com.cn/tiy/t.asp?f=html_base_test)
+
+| **行内元素** | **span**(范围) | **inline**       | **不会自动换行** |
+| ------------ | -------------- | ---------------- | ---------------- |
+| **块状元素** | **div**        | **block**        | **会自动换行**   |
+| **行内块**   |                | **inline-block** | **不会自动换行** |
+
+### display: block;
+
+### &nbsp ;                      Non-Breaking Space      插入空格                           Non-Breaking 是 不换行 的意思
+
+## button
+
+<button class="  ">
+    Add to favorites
+</button>
+
+**当type为submit时 , 在form标签内部加上action,表示submit提交的网址**                  ---------->>>>>>>             [案例](https://www.runoob.com/try/try.php?filename=tryhtml_button_name)
+
+## canvas(画布)
+
+获得一个画布    ----->>>   [案例](https://www.runoob.com/html/html5-canvas.html)
+
+js ----->var canvas = document.getElementById("canvas");
+
+​              var ctx   = canvas.getContext("2d");
+
+## caption(表标题)
+
+```html
+<table>
+  <caption>Example Caption</caption>
+<tr>(行)
+    <th>Company</th>   --->(表头             header             单元格,黑体)
+    <th>Address</th>
+</tr>
+<tr>
+    <td>Apple, Inc.</td>   --->(            data              标准单元格)
+    <td>1 Infinite Loop Cupertino, CA 95014</td>
+</tr>
+</table>
+```
+
+## blockquote(块引用)   --->>>      q(短引用)
+
+blockquote 元素前后添加了换行，并增加了外边距
+
+可选属性 cite (引用)    <  **saɪt**  >    引用的文本将以斜体显示
+
+## footer(页脚)       header(页眉---介绍信息）
+
+注意:  ---->>  footer元素内的联系信息应该位于address 标签中
+
+code
+
+用于表示计算机源代码
+
+## col(为表格中的一个或多个-------**列**---------定义属性值)
+
+注意:----->>只能在 table 或 colgroup 元素内使用 <col> 标签
+
+<colgroup>
+        <col>
+        <col span="2" class="batman">
+        <col span="2" class="flash">
+    </colgroup>
+
+## lable(定义标签)  --- 2种方式实现方式
+
+当用户选择该标签时，浏览器就会自动将焦点转到和标签相关的表单控件上。
+
+**(1)**"for" 属性可把 label 绑定到另外一个元素 , 把 "for" 属性的值设置为相关元素的 id 属性的值
+
+```html
+<label for="username">Click me</label>
+<input type="text" id="username">
+```
+
+(2)内联,此时不用for 绑定id
+
+```html
+<label>Click me <input type="text"></label>
+```
+
+## datalist(选择表单提交,重要)
+
+   --->>>      [案例](https://www.runoob.com/try/try.php?filename=tryhtml5_datalist)
+
+label for="myBrowser">Choose a browser from this list:</label>
+<input list="browsers" id="myBrowser" />
+
+## dd (definition description)         dl(list)             dt(term(术语)) 
+
+## del(删除的文本元素)和s一样,更推荐del               
+
+## ins(insert)
+
+### em：基于父级元素的字体大小；                 <font color = red >rem：(root element)基于html的字体大小，浏览器默认16px</font>
+
+px不用于响应式布局
+
+## details(详细信息披露元素)              --->>>   summary(摘要)
+
+<details>
+    <summary>这是我自定义的,可以省略此行元素,则默认Details</summary>
+    Something small enough to escape casual notice.
+</details>
+
+## dfn(definition定义元素)
+
+## &lt;p&gt;
+
+## div(division分隔)
+
+作为“纯粹”的容器，<div>元素本身并不代表任何东西。相反，它用于对内容进行分组，以便可以使用class或id属性轻松设置样式，将文档的一部分标记为使用其他语言（使用lang属性）编写，依此类推。
+
+## em(emphasis)(强调加重)
+
+## embed(嵌入)
+
+定义嵌入的内容，比如插件
+
+```html
+<embed type="video/quicktime" src="movie.mov" width="640" height="480">
+```
+
+## fieldset
+
+<fieldset> 标签将表单内容的一部分打包，生成一组相关表单的字段。
+
+<form>
+  <fieldset>
+    <legend>健康信息</legend>
+    身高：<input type="text" />
+    体重：<input type="text" />
+  </fieldset>
+</form>
+
+legend 元素为   fieldset 元素  定义标题（caption）captain(船长)
+
+**注意:**   --->>  fieldset和legend组合才会有效果
+
+## figure
+
+标记文档中的一个图像
+
+figure标签规定独立的流内容（图像、图表、照片、代码等等）
+
+figcaption(图像的标题)
+
+## input
+
+type属性参照菜鸟教程,比如type="email" 直接进行邮箱合法性判断
+
+   ---  >>>    [案例](https://www.runoob.com/tags/att-input-type.html)
+
+## nav(navigation导航)
+
+nav 标签定义导航链接的部分。
+
+## hgroup
+
+表示为一个文件的一部分的多级标题。它将一组`<h1>–<h6>`元素分组
+
+## hr   --->>>   (horizon rule)水平尺
+
+## i   --->>>(italic)斜体
+
+## iframe   ---->>  (inline frame)内联框架
+
+## li
+
+ol里可以设置type属性,type = " a"
+
+## mark
+
+表示其文本**标记**或**突出显示**以供参考或符号的目的
+
+## object
+
+**<object>元素**表示外部资源，其可以被视为图像，嵌套浏览上下文，或资源由一个插件来处理
+

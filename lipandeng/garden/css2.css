@@ -1,0 +1,290 @@
+html {
+	background: #333 url(./img/css2-mainbg.png) no-repeat right bottom;
+	background-attachment: fixed;
+	background-size: 100% auto;
+	/* border:green solid; */
+}
+
+/* body默认margin为8px */
+body {
+	background: url(./img/css2-leftbg.svg) no-repeat left top, url(./img/css2-rightbg.svg) no-repeat right top;
+	background-color: transparent;
+	/* 固定背景图片 */
+	background-attachment: fixed, fixed;
+	/* 第一个width ，第二个height */
+	background-size: auto 100%, auto 100%;
+	/* margin:0; */
+	font: Arial, Helvetica, Sans-serif;
+
+}
+
+* {
+	color: white;
+	/* 文本修饰去掉下划线等等 */
+	text-decoration: none;
+	/* margin: 0;
+    padding: 0; */
+}
+
+.page-wrapper {
+	margin: 0 auto;
+	padding: 0;
+	width: 65%;
+	background: transparent;
+	/* border: blueviolet solid; */
+	background: url(./img/layer-frame.svg) repeat-y 0% 0%, url(./img/layer-frame.svg) repeat-y 94% 0%;
+	/* background: url(./layer-middle.svg) repeat-y center top; */
+}
+
+li {
+	list-style-type: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	text-decoration: none;
+	background-color: antiquewhite;
+	color: black;
+}
+
+header {
+	display: block;
+	float: left;
+	/* border: red solid; */
+	width: 40%;
+	margin-top: 10%;
+	margin-right: 15%;
+	margin-bottom: 10%;
+	/* background: url(./layer-frame.svg) no-repeat ; */
+	/* background-size: 200px 300px ; */
+	position: relative;
+	text-align: center;
+	left: 3.6%;
+	font-family: serif;
+}
+
+/* header::before{
+	background: url(./hook3.svg) ;
+	background-size: 100% auto;
+} */
+
+.summary {
+	/* position: absolute;
+	width:20%;
+	top: 15%;
+	left: 55%; */
+	display: block;
+	float: left;
+	width: 36%;
+	/* border: red solid; */
+	margin-top: 10%;
+	background-size: 100% auto;
+}
+
+.preamble {
+	/* border: red solid; */
+	clear: both;
+	width: 40%;
+	position: relative;
+	left: 3.6%;
+
+}
+
+.explanation {
+	position: absolute;
+	right: 23%;
+	top: 50%;
+	width: 23%;
+	/* border: red solid; */
+
+}
+
+.participation {
+	/* border: red solid; */
+	width: 40%;
+	margin-top: 25%;
+	position: relative;
+	left: 3.6%;
+}
+
+.benefits {
+	/* border: red solid; */
+	position: absolute;
+	right: 23%;
+	top: 180%;
+	width: 23%;
+}
+
+.requirements {
+	/* border: red solid; */
+	width: 23%;
+	position: absolute;
+	right: 23%;
+	top: 250%;
+}
+
+.design-selection {
+	/* border: red solid; */
+	width: 40%;
+	margin-top: 25%;
+}
+
+.zen-resources h3,
+.design-archives h3,
+.design-selection h3 {
+	/* border: red solid; */
+	position: relative;
+	left: 12%;
+}
+
+.zen-resources {
+	/* border: red solid; */
+	width: 40%;
+	margin-top: 25%;
+}
+
+.design-archives {
+	/* border: red solid; */
+	width: 40%;
+	margin-top: 25%;
+}
+
+footer {
+	/* border: red solid; */
+	width: 80%;
+	position: relative;
+	left: 8%;
+	margin-top: 25%;
+	/* 让子元素块水平均分分离 */
+	display: flex;
+	justify-content: space-between;
+	font-size: 100%;
+
+}
+
+@media screen and (max-width:799px) {
+	header {
+		width: 80%;
+		clear: both;
+		position: relative;
+		left: 10%;
+
+	}
+
+	.summary {
+		width: 80%;
+		margin: auto;
+		position: relative;
+		left: 10%;
+		margin-bottom: 10%;
+
+	}
+
+	.preamble {
+		width: 80%;
+		margin: auto;
+		position: relative;
+		left: 0%;
+		margin-top: 10%;
+	}
+
+	.explanation {
+		width: 80%;
+		margin: auto;
+		clear: both;
+		position: relative;
+		left: 0%;
+		margin-top: 10%;
+	}
+
+	.explanation {
+		position: relative;
+		margin-top: 10%;
+		width: 80%;
+		margin: auto;
+
+	}
+
+	.participation {
+		width: 80%;
+		margin: auto;
+		left: 0%;
+		margin-top: 10%;
+	}
+
+	.participation {
+		width: 80%;
+		margin: auto;
+		clear: both;
+		margin-top: 10%;
+	}
+
+	.benefits {
+		width: 80%;
+		margin: auto;
+		right: 0%;
+		position: relative;
+		margin-top: 10%;
+	}
+
+	.requirements {
+		right: 0%;
+		width: 80%;
+		margin: auto;
+		position: relative;
+		margin-top: 10%;
+	}
+
+	.design-selection {
+		margin-top: 10%;
+		width: 80%;
+		margin: auto;
+	}
+
+
+	.zen-resources {
+		margin-top: 10%;
+		width: 80%;
+		margin: auto;
+	}
+
+	.design-archives {
+		margin-top: 10%;
+		width: 80%;
+		margin: auto;
+
+	}
+
+	/* .page-wrapper {
+		border: red solid;
+		position: relative;
+		margin: 120px auto 200px auto;
+		padding: 0 50px 20px 50px;
+		width: 260px;
+		background: url(layer-middle.svg) repeat-y center top;
+		background-size: auto;
+
+	} */
+/* 预留一个空块 */
+	/* .page-wrapper::before,
+	.page-wrapper::after {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		content: '';
+	}
+
+	.page-wrapper::before {
+		top: -600px;
+		height: 600px;
+		background: url(hook3.svg) no-repeat center bottom, url(layer-frame.svg) no-repeat center 567px;
+		background-size: 300px auto, 360px auto;
+	}
+
+	.page-wrapper::after {
+		bottom: -33px;
+		height: 33px;
+		background: transparent url(layer-frame.svg) no-repeat center bottom;
+		background-size: 360px auto;
+	} */
+}

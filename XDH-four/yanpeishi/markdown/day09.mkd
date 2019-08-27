@@ -1,0 +1,43 @@
+###时间戳代码
+        <!DOCTYPE html>
+        <html>
+        <head>
+        <meta charset="UTF-8">
+        <title>yshijianchuo</title>
+        <script type="text/javascript">
+
+
+
+        </script>
+        <style type="text/css">
+
+        #aaa{
+
+	       color: red;
+	       height: 400px;
+	       font-size: 50px;
+        }
+        #bbb{
+
+	       color: blue;
+	       height: 400px;
+	       font-size: 50px;
+        }
+
+        </style>
+        </head>
+        <body >
+        <p id="aaa"></p>
+        <p id="bbb"></p>	
+        <script >
+        var shijangchuo= new Date();
+
+        document.getElementById('aaa').innerHTML=shijangchuo;
+        document.getElementById("bbb").innerHTML = shijangchuo.getTime();
+  
+        </script>
+		
+
+        </body>
+        </html>
+

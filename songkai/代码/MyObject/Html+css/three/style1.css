@@ -1,0 +1,68 @@
+body{
+    background: fixed no-repeat url("./img/timg.jpeg");
+    background-size: 100%;
+}
+div.page-wrapper h1{
+    text-align: center;
+    font-size: 4em;
+    font-weight: 800;
+}
+div.preamble{
+    float: left;
+    margin: 3%;
+    width: 30%;
+    padding: 1%;
+    border-top: black solid 2px;
+    border-right: black solid 2px;
+}
+div.explanation{
+    width: 30%;
+    padding: 1%;
+    margin: 5%;
+    float: left;
+    background: deepskyblue;
+}
+div.participation{
+    width: 30%;
+    padding: 1%;
+    background-color: deepskyblue;
+    opacity: 0.7;
+    font-weight: 800;
+    border-radius: 10%;
+    border-top: black solid 2px;
+    border-left: black solid 2px;
+    margin: 3%;
+    float: left;
+}
+div.benefits{
+    width: 30%;
+    padding: 1%;
+    margin: 3%;
+    float: left;
+    background: red;
+}
+div.requirements{
+    width: 30%;
+    padding: 1%;
+    margin: 3%;
+    float: left;
+    background: deepskyblue;
+}
+div.zen-resources{
+    float: right;
+    margin: 3%;
+    width: 10%;
+    background: yellow;
+}
+div.design-selection{
+    float: right;
+    width: auto;
+    margin: -30% 5% 0% 0% ;
+    background: red;
+}
+div.design-archives{
+    float: right;
+    width: auto;
+    margin: -5% 5% 0% 0%;
+    background: deepskyblue;
+}

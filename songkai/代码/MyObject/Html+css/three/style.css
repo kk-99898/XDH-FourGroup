@@ -1,0 +1,304 @@
+html {
+    background: no-repeat fixed url("img/timg.jpeg");
+    background-size: 100%;
+}
+div.page-wrapper h1{
+    background-color: black;
+    opacity: 0.5;
+    font-size: 4em;
+    margin: 0px 100px 30px 110px;
+    padding: 30px;
+    width: auto;
+    line-height:60px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    font-family: Kinnari;
+}
+div.page-wrapper header h2{
+    border-radius: 2px;
+    opacity: 0.7;
+    font-size: 1.8em;
+    font-style: normal;
+    text-align: center;
+    font-family: Chandas;
+    margin-top: 25px;
+    margin-left: 37%;
+    color: white;
+    background-color: black;
+    width: 25%;
+}
+div.summary {
+    background-color: black;
+    width: 89.3%;
+    opacity: 0.7;
+    color: white;
+    font-family: Jamrul;
+    margin-top: 1.5%;
+    margin-left: 5.8%;
+    font-style: oblique;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.2em;
+    padding: 5px 0px;
+    line-height: 80%;
+}
+div.summary{
+    margin-bottom:10px;
+}
+div.preamble h3{
+    background-color: red;
+    width: auto;
+    color: white;
+    margin-left: 22px;
+    padding: 5px;
+}
+div.preamble {
+    background: url("./img/bg2.jpeg");
+    opacity: 0.7;
+    color: white;
+    font-style: italic;
+    font-weight: 900;
+    position: relative;
+    width: 89%;
+    left: 6%;
+}
+div.preamble p{
+    padding: 10px;
+}
+div.explanation h3{
+    background-color: red;
+    width: auto;
+    color: white;
+    margin-left: 22px;
+    padding: 5px;
+}
+div.explanation {
+    background: url("./img/bg2.jpeg");
+    opacity: 0.7;
+    color: white;
+    font-style: italic;
+    font-weight: 900;
+    position: relative;
+    width: 89%;
+    left: 6%;
+}
+div.explanation p{
+    padding: 10px;
+}
+div.participation h3{
+    background-color: red;
+    width: auto;
+    color: white;
+    margin-left: 22px;
+    padding: 5px;
+
+}
+div.participation {
+    background: url("./img/bg2.jpeg");
+    opacity: 0.7;
+    color: white;
+    font-style: italic;
+    font-weight: 900;
+    position: relative;
+    width: 89%;
+    left: 6%;
+}
+div.participation p{
+    padding: 15px;
+}
+div.benefits h3{
+    background-color: red;
+    width: auto;
+    color: white;
+    margin-left: 22px;
+    padding: 5px;
+
+}
+div.benefits {
+    background: url("./img/bg2.jpeg");
+    opacity: 0.7;
+    color: white;
+    font-style: italic;
+    font-weight: 900;
+    position: relative;
+    width: 89%;
+    left: 6%;
+}
+div.benefits p {
+    padding: 15px;
+}
+div.requirements h3{
+    background-color: red;
+    width: auto;
+    color: white;
+    margin-left: 22px;
+    padding: 5px;
+}
+div.requirements {
+    background: url("./img/bg2.jpeg");
+    opacity: 0.7;
+    color: white;
+    font-style: italic;
+    font-weight: 900;
+    position: relative;
+    width: 89%;
+    left: 6%;
+}
+.requirements p{
+    margin: -1% 0% 0% 0%;
+}
+
+div.design-selection h3{
+    background-color: red;
+    width: auto;
+    color: white;
+    margin-left: 22px;
+    padding: 5px;
+}
+div.design-selection{
+    background: url("./img/bg2.jpeg");
+    opacity: 0.7;
+    color: white;
+    font-style: italic;
+    font-weight: 900;
+    position: relative;
+    width: 89%;
+    left: 6%;
+}
+div.design-archives h3{
+    background-color: red;
+    width: auto;
+    color: white;
+    margin-left: 22px;
+    padding: 5px;
+}
+div.design-archives {
+    background: url("./img/bg2.jpeg");
+    opacity: 0.7;
+    color: white;
+    font-style: italic;
+    font-weight: 900;
+    position: relative;
+    width: 89%;
+    left: 6%;
+
+    color: white;
+}
+div.zen-resources h3{
+    background-color: red;
+    width: auto;
+    color: white;
+    margin-left: 22px;
+    padding: 5px;
+}
+div.zen-resources {
+    background: url("./img/bg2.jpeg");
+    opacity: 0.7;
+    color: white;
+    font-style: italic;
+    font-weight: 900;
+    position: relative;
+    width: 89%;
+    left: 6%;
+}
+div.main footer {
+    background: url("./img/bg2.jpeg");
+    opacity: 0.7;
+    color: white;
+    font-style: italic;
+    font-weight: 900;
+    position: relative;
+    width: 89%;
+    left: 6%;
+    font-size: 1.2em;
+    font-family: Chandas;
+}
+div.main footer a.zen-validate-html{
+    margin: 6%;
+}
+div.main footer a.zen-validate-css{
+    margin: 6%;
+}
+div.main footer a.zen-license{
+    margin: 6%;
+}
+div.main footer a.zen-accessibility{
+    margin: 6%;
+}
+div.main footer a.zen-github{
+    margin: 6%;
+}
+div.participation a{
+    display: inline;
+    color: white;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+div.zen-resources a{
+    display: inline;
+    color: white;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+div.design-selection a{
+    display: inline;
+    color: white;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+div.design-archives a{
+    display: inline;
+    color: white;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+div.requirements a{
+    display: inline;
+    color: white;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+div.main footer a{
+    display: inline;
+    color: white;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+div.requirements p{
+    padding: 15px;
+}
+div.summary a{
+    display: inline;
+    color: white;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    font-weight: normal;
+    text-transform: capitalize;
+}

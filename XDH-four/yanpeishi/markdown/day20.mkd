@@ -1,0 +1,37 @@
+###git常用命令
+1. git init  初始化
+
+2. git config --global user.name XXX  设置用户名
+
+3. git config --global user.email XXX  设置用户邮箱
+
+4. git config --list  查看用户信息
+
+5. git add  添加暂存区
+
+6. git commit –m “XXXX”  提交到本地仓库
+
+7. git status  查看项目状态
+
+8. git push origin 本地分支名:远程分支名  推送到远程仓库
+
+9. git pull  拉取远程仓库
+
+#### 	创建分支(1.本地 git branch 分支名 2.远程分支1.可以再github创建 2.可以在本地把分支推到远程仓库)
+
+删除分支（1.本地 git branch -d（D强制删除） 分支名 2.远程 git push origin --delete 分支名）
+
+查看所有分支（git branch -a  ）
+
+切换分支（git checkout 分支名 ）
+
+合并分支（git merge orgin/分支名）本地  就得说fetch从把同步远程分支更新到本地     
+
+比较fetch加merge  和 pull 。
+
+结果上来看 确实 fetch 加merge 等于 pull
+
+但是 fetch是让你本地所关联的远程端的commit id 版本号更新到了最新，然后我在本地在合并远程。
+
+git pull 会将本地库更新至远程库的最新状态
+

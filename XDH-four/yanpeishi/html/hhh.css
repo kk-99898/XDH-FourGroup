@@ -1,0 +1,150 @@
+body{
+  font:12px/16px ；
+  color#555;
+  background: url(bg_left.gif) repeat-y #fff;
+  margin:0;
+
+}
+abbr{
+  border:0 none;
+}
+.page-wrapper{
+  margin: 0;
+  padding: 0;
+}
+.intro{
+  width: 303px;
+}
+h1{
+    margin:0;
+    width:303px;
+    height:198px;
+    background: url(h1.jpg) no-repeat top left;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+h2{
+  margin:0 0 9px 0;
+  width:303px;
+  height:37px;
+  background:url(h2.gif) no-repeat top left;
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.summary p{
+  margin: 0;
+  padding: 8px 30px 4px 18px;
+}
+.summary p:first-child{
+  font-weight: bold;
+  color:#777;
+}
+
+.preamble h3{
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background:url(the_road.jpg) no-repeat top left;
+  margin: 5px 0 0;
+  width: 303px;
+  height: 36px;
+}
+.preamble p{
+  margin: 0;
+  padding: 8px 30px 4px 18px;
+  font-weight: bold;
+  color:#777;
+}
+.supporting{
+  position: absolute;
+  top:70px;
+  left:303px;
+  width: 320px;
+  margin: 0;
+  padding: 0;
+  background: url(support_bg.gif) repeat-y top right;
+}
+.supporting h3,.supporting p{
+  margin: 0;
+  padding: 0 40px 10px 0;
+  color:rgb(54, 52, 52);
+}
+.supporting h3{
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  opacity: 0;
+  margin: 0 40px 5px 0;
+  height:34px;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+.explanation{
+  background: url(so_what.jpg) no-repeat top left;
+  margin-right: 14px;
+}
+.participation{
+  background: url(parti.gif) no-repeat top left;
+}
+.benefits {
+  background: url(bene.gif) no-repeat top left;
+}
+.requirements {
+  background: url(req.gif) no-repeat top left;
+}
+.sidebar{
+  position: absolute;
+  top:130px;
+  left: 608px;
+  width: 200px;
+  margin:0;
+  padding: 0;
+  font-weight: bold;
+  color:#777;
+}
+.sidebar h3{
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  
+  margin: 5px 0 0;
+  width: 303px;
+  height: 36px;
+}
+.sidebar h3.select{
+  background:url(select.jpg) no-repeat top left;
+}
+.sidebar h3.archives{
+  background:url(archives.jpg) no-repeat top left;
+}
+.sidebar h3.resources{
+  background:url(resources.jpg) no-repeat top left;
+}
+footer{
+  background: url(foot.jpg);
+  margin-left: -14px;
+  margin-right:14px;
+}
+ul{
+  margin: 7px 0 7px 20px;
+  padding: 0;
+}
+li{
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 12px;
+}
+a{
+  color:rgb(119, 114, 114);
+}
+footer a{
+  color: black;
+}
+a:hover{
+  color:red;
+}

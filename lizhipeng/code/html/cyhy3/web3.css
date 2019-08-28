@@ -1,0 +1,179 @@
+body{
+    background: rgba(0,253,255,0.51);
+    font-family: "Lucida Sans", sans-serif;
+    min-width: 780px;
+}
+
+.page-wrapper {
+    background: rgba(255,255,1,0.51);
+    margin: 5em;
+}
+.intro{
+    width:100%;
+    color: #00066b;
+}
+
+header{
+    position: relative;
+
+    text-align: center;
+}
+header h1{
+    background: #ffff00;
+    font-size: 3em;
+    width: 30%;
+    height: 10%;
+    margin: auto;
+}
+
+header h2{
+    font-size: 8em;
+
+}
+
+.summary {
+    font-size: 2em;
+    width: 66%;
+    margin: auto;
+}
+
+
+
+.supporting{
+    margin: 15% 5% 5% 5%;
+ ;
+    width: 90%;
+    height: 100em;
+    line-height: 150%;
+
+}
+
+.supporting h3{
+    font-size: 2em;
+    line-height: 150%;
+
+}
+
+.preamble{
+    float: left;
+    background: #ffc0be;
+    margin: 0;
+    padding: 2%;
+    width: 72%;
+    height: auto;
+}
+
+.explanation{
+    float: right;
+    background: #dddaff;
+    padding: 2%;
+    width: 20%;
+    height: auto;
+    right:0;
+}
+.participation{
+    float: left;
+    background: #e6ffcf;
+    padding: 2%;
+    width: 20%;
+    height: auto;
+}
+
+.benefits {
+    float: left;
+    background: #c7ffff;
+    margin: 0;
+    padding: 2%;
+    width: 48%;
+    height: auto;
+}
+.requirements{
+    background: #ffdcac;
+    float: left;
+    padding: 2%;
+    width: 48%;
+    height: auto;
+    min-width: 550px;
+}
+footer {
+    background: #ffb237;
+    position: absolute;
+    font-size: 1em;
+    width: 40px;
+    bottom: 0;
+    left: 0;
+    padding: 8px;
+}
+
+/*-----------------------------------------------------------------------*/
+.wrapper {
+    background: rgba(192,255,198,0.64);
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 30%;
+
+}
+
+.design-selection{
+    position: relative;
+    width: 24%;
+    margin: 1% 5% 1% 5%;
+}
+
+.design-archives{
+    position: relative;
+    width: 24%;
+    margin:1% 4% 1% 5%;
+}
+.zen-resources{
+    position: relative;
+    width: 24%;
+    margin: 1% 4% 1% 5%;
+}
+
+.sidebar ul {
+    list-style: none;
+    line-height: 300%;
+    padding: 0;
+    font-size: 1em;
+    /*text-align: center;*/
+}
+/*.sidebar h3{*/
+/*    text-align: center;*/
+/*}*/
+
+a {
+    color: #e60018;
+}
+
+a:hover, a:focus {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+}
+abbr:hover {
+    cursor:help;
+}
+
+@media screen and (max-width: 1500px) {
+    .preamble{
+        width: 100%;
+    }
+
+    .explanation{
+        width: 100%;
+        float: left;
+    }
+    .participation{
+        width: 100%;
+    }
+
+    .benefits {
+        width: 100%;
+    }
+    .requirements{
+        width: 100%;
+    }
+}

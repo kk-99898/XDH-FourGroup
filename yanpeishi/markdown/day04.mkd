@@ -1,0 +1,29 @@
+    #include<stdio.h>
+
+    int main()
+    {
+         int a;
+         scanf("%d",&a);
+         int b;
+         scanf("%d",&b);
+         int c;
+         scanf("%d",&c);
+    
+         if(a>b&&a>c){
+            printf("%d\n",a);
+         } else if(b>c){
+            printf("%d\n",b);
+         }
+         else{
+             printf("%d\n",c);
+         }
+    
+         return 0;
+
+
+      }
+
+今天对昨天的代码进行了改造，昨天的问题得到了解决，问题出在哪呢？
+问题就处在%d 后面的\n 上，当最后输入c的值后，\n自动切换到了下
+一行，此时按下回车键，程序不能立即执行。
+

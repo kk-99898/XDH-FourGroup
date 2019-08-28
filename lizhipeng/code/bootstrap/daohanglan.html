@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <title>导航栏</title>
+</head>
+<body>
+    <nav class="navbar navbar-expend-sm bg-light">
+        <ul class="nav-bar">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+            </li>
+    
+            <li class="nav-item">
+                <a href="#" class="nav-link">link3</a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <div class="container-fluid">
+        <h3>简单的导航栏实例</h3>
+        <p>导航栏一般放在页面的顶部。</p>
+        <p>我们可以使用 .navbar 类来创建一个标准的导航栏，后面紧跟: .navbar-expand-xl|lg|md|sm 类来创建响应式的导航栏 (大屏幕水平铺开，小屏幕垂直堆叠)。</p>
+    </div>
+    <!-- 带颜色的导航栏 -->
+    <div class="container">
+        <h3>不同颜色导航栏</h3>
+        <p>对于暗色背景需要设置文本颜色为浅色的，对于浅色背景需要设置文本颜色为深色的。</p>
+    </div>
+
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+        </ul>
+    </nav>
+
+    <nav class="navbar navbar-expand-sm bg-success navbar-dark">
+            <!-- Brand/logo -->
+            <a class="navbar-brand" href="#">
+              <img src="https://static.runoob.com/images/mix/bird.jpg" alt="logo" style="width:40px;">
+            </a>
+            
+            <!-- Links -->
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link 3</a>
+              </li>
+            </ul>
+          </nav>
+          
+          <div class="container-fluid">
+            <h3>品牌 / Logo</h3>
+            <p>果使用图片，可以使用 .navbar-brand 类来设置图片自适应导航栏。</p>
+          </div>
+</body>
+</html>

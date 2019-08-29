@@ -1,0 +1,46 @@
+##请不要把字符串、数值和布尔值声明为对象！
+
+        <!DOCTYPE HTML>
+        <html>
+        <head>
+        <meta charset="utf-8">
+        <script >
+            function validateForm() {
+
+            var x = document.forms["myForm"]["fname"].value;
+        
+
+            if (x == "") {
+                alert("邮箱必须填写！");
+                return false;
+            }
+            else {
+                var y=x.indexOf("@");
+                var yy=x.indexOf(".com")
+                var z=x.substring(0,y);
+                var tian=x.substring(y+1,yy);
+                var txt = { "qq": {"name": "腾讯"},
+
+            			    "123": {"name": "abc"},
+
+            			    "163": {"name": "网易"}
+                }
+            
+  			
+  		   
+            }
+            alert(txt[tina]);
+        }
+        </script>	
+        </head>
+        <body>
+        <form name="myForm" onsubmit="return validateForm()" method="post">
+        邮箱：   
+        <input type="text" name="fname">
+        <button>tijiao</button>
+        </form>
+        </body>
+        </html>
+###上述代码的作用
+  1.在表单中输入邮箱号，判断是邮箱是什么邮箱，属于什么公司；
+  2.上述代码存在的问题是将字符串声明为了对象。这将导致程序的可扩展性受到限制。

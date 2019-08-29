@@ -1,0 +1,233 @@
+/* 所有元素 */
+* {
+    box-sizing: border-box;
+    padding: 1%;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration: none;
+    background-color: antiquewhite;
+}
+
+html {
+    transition: all 2s;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    background: #f4ede3;
+    background: url(./img/css1-maxbg.jpg) no-repeat center center;
+    /* 让背景图基于容器大小伸缩 */
+    background-size: cover;
+    /* 背景图缩放的原点定位到viewport的中心 */
+    background-position: center center;
+}
+
+body {
+    font: Arial, Helvetica, Sans-serif;
+}
+
+h3 {
+    /* border: dashed red; */
+    font: italic georgia, sans-serif;
+    color: #7D775C;
+    font-size: 2rem;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+a {
+    color: grey;
+    font-weight: bold;
+padding: 0;
+margin: 0;
+
+}
+
+li {
+    list-style-type: none;
+    /* border: black solid; */
+    font-size: 1rem;
+}
+
+p {
+    /* border: dashed green; */
+    font-size: 1.5rem;
+}
+
+/* body*/
+.page-wrapper {
+    /* border: red dashed; */
+    position: relative;
+
+}
+
+/*------------------- 标题 ----------------------*/
+header {
+    /* border: gold dashed; */
+    font-family: Arial, Helvetica, sans-serif;
+    background-blend-mode: overlay ;
+}
+
+header h1 {
+    /* text-align: center; */
+    position: relative;
+    font-size: 5rem;
+    color: #00374f;
+    font-family: serif;
+}
+
+header h2 {
+    position: absolute;
+    left: 0;
+    top: 10%;
+    font-size: 1rem;
+    color: grey;
+}
+
+/* -----------------------------------------第一部分-----------以下三部分--导言介绍 */
+.intro {
+    /* border: black solid; */
+    float: left;
+    width: 15%;
+}
+
+
+/* -----1.1----下载示例文件 */
+.summary {
+    /* border: green dashed; */
+    margin: auto;
+}
+
+.summary p:last-child {
+    /* background: transparent url(./img/xiazai.eps) no-repeat top left; */
+}
+
+/* ----1.2-----前言：启蒙之路 */
+.preamble {
+    /* border: hotpink dashed; */
+}
+
+/* -----------------------------------------第二部分-----------注意不用写main */
+.supporting {
+    /* border: royalblue dashed; */
+    float: left;
+    width: 70%;
+}
+
+/* ------底部------ */
+footer {
+    /* border: green solid; */
+    width: 70%;
+    position: relative;
+    left: 15%;
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+
+footer a {
+    float: left;
+    width: 15%;
+    text-align: center;
+    margin-top: 2.5%;
+    background: #272625;
+    color: #8bcbdb;
+    margin: 2%;
+}
+
+/*------------------------------------------第三部分----------------------- 侧边栏 */
+.sidebar {
+    /* border: hotpink dashed; */
+    position: absolute;
+    top: 90%;
+    right: 0;
+    float: right;
+    width: 15%;
+}
+
+/* 当屏幕尺寸小于999px时的排版 */
+@media screen and (max-width:999px) {
+    html {
+        background: url(./img/css1-middlebg.jpeg) no-repeat center center;
+        /* 让背景图基于容器大小伸缩 */
+        background-size: cover;
+        /* background-color: #faf3e6; */
+    }
+
+    body {
+        color: black;
+        font-size: 2rem;
+    }
+
+    .intro {
+        /* clear: both; */
+        width: 20%;
+    }
+
+    .supporting {
+        /* clear: both; */
+        width: 80%;
+    }
+
+    footer {
+        /* border: red solid; */
+        float: left;
+        left: 5%;
+        right: 20%;
+        width: 90%;
+    }
+
+    .sidebar {
+        clear: both;
+        width: 100%;
+        position: relative;
+    }
+
+    /* -------3.1.1-------design-selection */
+    .design-selection {
+        /* border: forestgreen dashed; */
+        width: 50%;
+        float: left;
+        padding: 0;
+        position: relative;
+        left: 10%;
+    }
+
+    /* ------3.1.2----------design-archives*/
+    .design-archives {
+        /* border: greenyellow dashed; */
+        width: 20%;
+        float: right;
+        padding: 0;
+    }
+
+    /* -------3.1.3------------zen-resource */
+    .zen-resources {
+        width: 30%;
+        float: left;
+        padding: 0;
+    }
+
+    /* 当屏幕尺寸小于499px时的排版 */
+    @media screen and (max-width:499px) {
+        html {
+            background: url(./img/css1-minbg.jpeg) no-repeat center center;
+            /* 让背景图基于容器大小伸缩 */
+            background-size: cover;
+        }
+
+        .intro {
+            clear: both;
+            width: 100%;
+        }
+
+        .supporting {
+            clear: both;
+            width: 100%;
+        }
+        .design-selection {
+            left: 0%;
+        }
+    
+    }

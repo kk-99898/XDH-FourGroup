@@ -1,0 +1,35 @@
+###正则判断手机号
+        <!DOCTYPE HTML>
+        <html>
+        <head>
+        <meta charset="utf-8">
+        <script >
+            function validateForm() {
+                var x = document.forms["myForm"]["fname"].value;       
+                var patt1=/\d/g; 
+                var yyy =x.match(patt1);
+                var z=x.substring(0);
+                var xxx=z.split("");
+                if(xxx.length==11){
+        	       alert(xxx);       
+                if(yyy[0]==1&&yyy.length==11){
+                    alert("号码正确"); 
+                }
+                if(yyy[0]!=1||yyy.length!=11){
+        	       alert("号码错误");           
+                }
+                }else{
+        	       alert("重新输入");
+                }
+            }
+        </script>	
+        </head>
+        <body>
+        <form name="myForm" onsubmit="return validateForm()" method="post">
+        手机号：   
+        <input type="text" name="fname">
+        </form>
+        </body>
+        </html>
+###。
+这个任务完成的较为轻松，用的时间也不多，原因是教官明确告诉我用正则，如果知道了用哪些知识来完成一项任务，那么完成任务的过程是很容易的，以后作任务的时候，可以多想要用到哪些知识，这样可以提高学习进度。

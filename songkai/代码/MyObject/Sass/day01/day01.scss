@@ -1,0 +1,17 @@
+$z:7;
+$bgc:skyblue;
+
+@for $i from 1 through $z {
+  .item-#{$i} {
+    font-size: 1em * $i;
+  }
+}
+@mixin rounded-corners {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+p{
+  @include rounded-corners;
+  background: $bgc;
+}

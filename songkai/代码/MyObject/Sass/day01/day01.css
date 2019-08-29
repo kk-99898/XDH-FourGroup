@@ -1,0 +1,28 @@
+.item-1 {
+  font-size: 1em; }
+
+.item-2 {
+  font-size: 2em; }
+
+.item-3 {
+  font-size: 3em; }
+
+.item-4 {
+  font-size: 4em; }
+
+.item-5 {
+  font-size: 5em; }
+
+.item-6 {
+  font-size: 6em; }
+
+.item-7 {
+  font-size: 7em; }
+
+p {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: skyblue; }
+
+/*# sourceMappingURL=day01.css.map */

@@ -1,0 +1,19 @@
+$col:5;
+$i:12;
+@for $i from 1 through $col {
+  .col-md-#{$i} {
+    margin: 2px;
+    text-align: center;
+    border: solid red 1px;
+    width: 100% * $i / $col;
+  }
+}
+$col:8;
+@for $i from 1 through $col {
+  .col-sm-#{$i} {
+    margin: 2px;
+    text-align: center;
+    border: solid red 1px;
+    width: 100% * $i / $col;
+  }
+}

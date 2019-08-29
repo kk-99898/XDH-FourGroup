@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ceshi</title>
+</head>
+
+<body>
+    <div>
+        请输入手机号 <input id="phoneNum" type="text">
+        <button onclick="phoneNum()">验证</button>
+    </div>
+    <script>
+        function phoneNum() {
+            var phoneNum = document.getElementById("phoneNum").value;
+            //判断是否为手机号
+            var reg =/^[1][3,5-9][0-9]{9}$/;
+            if (reg.test(phoneNum)) {
+                alert(phoneNum+"是正确的号码格式!");
+                return;
+            } else {
+                alert(phoneNum+"不是正确的号码格式!");
+                return;
+            }
+
+        }
+    </script>
+</body>
+
+</html>

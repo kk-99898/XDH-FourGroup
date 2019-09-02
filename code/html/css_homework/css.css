@@ -1,0 +1,199 @@
+::backface-visibility:visible;
+::backface-visivility:hidden;
+background{
+    background: green;
+    background:content-box;
+    background:no-repeat;
+    background:left 5% / 15% 60% repeat-x;
+    background: center / contain no-repeat,#eee 35%;
+    
+    background-attachment: fixed;
+    background-attachment: scroll;
+    background-attachment: inherit;
+    background-attachment: local;
+    background-attachment: initial;
+    background-attachment: unset;
+
+    background-blend-mode: normal|multiply|screen|overlay|darken|lighten|color-dodge|saturation|color|luminosity;
+
+    background-clip:border-box|padding-box|content-box;
+
+    background-color:yellow;
+
+    background-image:url()|none|inherit;
+
+    background-origin:padding-box|content-box|border-box;
+
+    background-position:left top|left center|left bottom|right top|right center|right bottom|center top|center left|center bottom;
+    background-position:x% y%|xpos ypos|inherit;
+    background-repeat:repeat|repeat-x|repeat-y|no-repeat|inherit;
+    background-size:length|percentage|cover|contain;
+}
+border{
+    border-bottom: width style color;
+    border-bottom-left-radius:2em;
+    border-bottom-right-radius:2em;
+    border-bottom-style: dotted;
+    border-bottom-width: thin|medium|thick|length|inherit;
+    border-collapse:collapse|separate|inherit;
+    border-color:red blue yellow;
+    border-image:outside repeat slice source width;
+    yuansudaxiao
+    border-left:width style color;
+    border-right:width style color;
+    border-top:width style color;
+
+    border-radius:length|%;
+
+    border-spacing:length (length);
+
+    border-style:hidden|dotted|dashed|solid|double|groove|ridge|inset|outset|inherit;
+
+    border-width:length;
+}
+
+box{
+    box-align: start|end|center|baseline|stretch;
+    box-direction:normal|reverse|inherit;
+    box-flex:value;
+    box-lines:single|multiple;
+    box-orient: horizontal|vertical|inline-axis|block-axis|inherit;
+    box-shadow: h-shadow v-shadow blur spread color inset;
+
+}
+
+clear:both|left|right|none;
+clip:rect(0px,60px,200px,0px);
+column-count:number|auto;
+column-fill: balance|auto;
+column-cap:length|nomal;
+column-rule:width style color;
+column-span：1|all;
+column-width:auto|length;
+columns: column-width column-count;
+
+cursor:
+direction:ltl|rtl;
+display:
+filter:nonenone|blur()|brightness()|contrast()|drop-shadow()|grayscale()|hue-rotate()|invert()|opacity()|saturate()|sepia()|url();
+flex: flex-grow flex-shrink flex-basis|auto|initial|inherit;
+flex-basis: number|auto|initial|inherit;
+flex-direction: row|row-reverse|column|column-reverse|initial|inherit;
+flex-flow: flex-direction flex-wrap|initial|inherit;
+flex-grow: number|initial|inherit;
+flex-shrink: number|initial|inherit;
+flex-wrap: nowrap|wrap|wrap-reverse|initial|inherit;
+
+float:left|right|none;
+font{
+    font-style:;
+    font-size:;
+    font-variant: ;
+    font-weight;
+    font-family:;指定字体//
+    caption
+    icon
+    menu
+    message-box
+    small-capition
+    status-bar
+
+}
+
+grid-columns: length|%|none|inherit;
+grid-rows: length|%|none|inherit;
+hanging-punctuation: none|first|last|allow-end|force-end;
+height:auto|lehgth|%;
+icon:auto|URl;
+justify-content: flex-start|flex-end|center|space-between|space-around|initial|inherit;
+
+letter-spacing:normal|length;
+line-height:normal|number|length|%;
+list-style:type position image inherit inherit
+
+margin: auto|length|%;
+margin-bottom:;
+margin-left:;
+margin-right:;
+margin-top:;
+max-height:;
+max-width:;
+min-height:;
+min-width：;
+nav-down:auto|id|target-name|inherit;
+nav-index:auto|number|inherit;
+nav-left:auto|id|target-name|inherit;
+nav-index:auto|number|inherit;
+nav-up:auto|id|target-name|inherit;
+yuansudaxiao
+opacity:value|inherit; //透明元素
+order:number;    //设置弹性盒模型对象的子元素出现的顺序
+outline： color style width;
+outline-offset:length;
+outline-style: none|dotted|dashed|solid|double|groove|ridge|inset|outset;
+outline-width: thin|medium|thick|length;
+overflow: visible|hidden|scroll|auto;  //如果内容溢出元素框，确定是否显示滚动条行为
+overflow-x: visible|hidden|scroll|auto|no-display|no-content;
+overfllow-y:;
+padding:length|%;
+
+
+padding-top:;
+padding-right:;
+padding-bottom:;
+padding-left:;
+
+page-break-after:auto|always|avoid|left|right|;
+page-break-before:;
+page-break-inside: auto|avoid;
+
+perspective:number|none;
+perspective-Origin:x-axis y-axis;  // 不理解
+
+position: absolute|flexd|relative|static|sticky|inherit|initial;
+
+punctuation-trim: none|start|end|allow-end|adjacent;
+
+quotes:none|string string string string; //前两个值规定第一级引用嵌套，后两个值规定第二级引用嵌套；
+resize：none|both|horizontal|vertical; //用户是否可调整元素大小
+rotation:angle(旋转角度)  指定元素逆时针旋转
+
+tab-size:number|length|initial;  规定制表符（tab）字符的长度
+table-layout:automatic(列宽度由单元格内容设定)|fixed（列宽由表格宽度和列宽度设定）; 表格布局的算法；
+:target：target-name target-new target-position;
+:target-naem:current|root|parent|new|modal|name;
+:target-new:window|tab|none;
+target-position:above|behind|front|back;
+text-alain:center|left|right|justify;
+text-alain-last:auto|left|right|center|justify|start|end|initiall;
+textfield-decoration:none|underline|overline|line-through|blink;
+text-decoration-color:color|initial;
+
+text-decoration-style: solid|double|dotted|dashed|wavy|initial;
+text-indent: length|%;
+
+text-outline:thickness blur color;
+
+text-overflow:clip|ellipsis|string;
+text-shadow:h-shadow v-shadow blur color;
+text-transform:none|capitalize|uppercase|lowercase;
+text-wrap: normal|none|understricted|suppress;
+transform: none|transform-functions;
+
+transform-origin:x-axis y-axis z-axis;
+transform-style: flat(2D)|preserve-3d(3D);
+transition:property duration timing-function delay;
+transition-delay: time;
+transition-duration:time;
+transition-property:none|all|property;
+transition-timing-function： linear|ease|sase-in|ease-put|ease-in-out|cubic-bezier(n,n,n,n);
+unicode-bidi:normal|embed|bidi-override|initial;
+:vertical:baseline|sub|super|top|text-top|middle|bottom|text-bottom|length|%;
+visibility:visible|hidden|collapse;
+white-space: nomal|pre|nowrap|pre-wrap|pre-line;
+word-spacing: normal|length;
+word-wrap: normal|break-word;
+z-index:auto|number；
+writing-mode: :horizontal-tb|vertical-rl|vertical-lr|sideways-rl|sideways-lr;
+
+

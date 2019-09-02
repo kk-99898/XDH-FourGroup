@@ -1,0 +1,187 @@
+body {
+    background: url("green.jpg") no-repeat;
+    background-size: 100% 100%;
+	margin: 0;
+	letter-spacing: 0.1em;
+    font-family: 'Open Sans', Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+
+}
+
+.page-wrapper {
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+.intro{
+    position: relative;
+	width: 100%;
+	height: 300px;
+}
+header {
+    margin:0;
+}
+
+header h1 {
+	position: relative;
+	width: 100%;
+	text-align:center;
+	margin: auto;
+	font-size: 4em;color: #00d623;
+
+}
+header h2 {
+     position: relative;
+     text-indent: 55%;
+     margin: auto;
+     font-style: italic;color: #00d623;
+ }
+.supporting{
+    background: rgba(190,231,255,0.43);
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 70%;
+}
+
+.supporting h3{
+    text-align: center;
+    font-size: 2em;
+}
+
+.preamble{
+    position: relative;
+    width: 30%;
+    margin: 1em 4% 1em 10%;
+    padding:3%;
+    background: rgba(224,255,90,0.43);
+
+}
+.explanation{
+    position: relative;
+    width: 30%;
+    margin: 1em 10% 1em 4%;
+    padding: 3%;
+    background: blanchedalmond;
+}
+.participation{
+    position: relative;
+    width: 30%;
+    margin: 1em 4% 1em 10%;
+    padding: 3%;
+    background: rgba(192,14,255,0.26);
+}
+
+.benefits{
+    position: relative;
+    line-height: 206%;
+    width: 30%;
+    margin: 1em 10% 1em 4%;
+    padding: 3%;
+    background: rgba(255,21,47,0.26);
+}
+.requirements{
+    position: relative;
+    width: 80%;
+    margin: 1em 10% 0;
+    padding: 3%;
+    background: rgba(255,21,47,0.26);
+}
+div.summary {
+    float: right;
+    font-style: italic;color: #1D2139;
+    width: 300px;
+}
+/*-----------------------------------------------------------------*/
+
+
+.wrapper {
+    background: rgba(192,255,198,0.64);
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 30%;
+
+}
+
+.design-selection{
+    position: relative;
+    width: 24%;
+    margin: 1% 5% 1% 5%;
+}
+
+.design-archives{
+    position: relative;
+    width: 24%;
+    margin:1% 4% 1% 5%;
+}
+.zen-resources{
+    position: relative;
+    width: 24%;
+    margin: 1% 4% 1% 5%;
+}
+
+.sidebar ul {
+    list-style: none;
+    line-height: 300%;
+    padding: 0;
+    font-size: 0.6em;
+    text-align: center;
+}
+.sidebar h3{
+    text-align: center;
+}
+
+a {
+    color: #e60018;
+}
+
+a:hover, a:focus {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+}
+abbr:hover {
+    cursor:help;
+}
+
+footer {
+    background: rgba(202,255,255,0.64);
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 0.6em;
+    padding-top: 0.6em;;
+}
+footer a{
+    margin: 0 4em 0;
+}
+
+@media screen and (max-width: 1010px) {
+    .preamble{
+        width: 100%;
+        margin: auto;
+    }
+
+    .explanation{
+        width: 100%;
+        margin: auto;
+    }
+    .participation{
+        width: 100%;        margin: auto;
+
+    }
+
+    .benefits {
+        width: 100%;        margin: auto;
+    }
+    .requirements{
+        width: 100%;        margin: auto;
+    }
+}
+
